@@ -71,10 +71,6 @@ class LoginForm extends Model
         if ($status == User::STATUS_BLOCKED) {
             $this->addError('status', 'Your account has been blocked');
             Yii::$app->session->setFlash('danger', 'Your account has been blocked');
-        } elseif ($status == User::STATUS_WAIT) {
-            $this->addError('status', 'Your account is waiting to be confirmed. Check your e-mail');
-            Yii::$app->session->setFlash('danger', 'Your account is waiting to be confirmed. Check your e-mail');
-            $user->sendConfirmEmail();
         }
     }
 

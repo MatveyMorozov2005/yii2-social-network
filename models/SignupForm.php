@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: vyach
- * Date: 07.11.2018
- * Time: 22:56
- */
+
 
 namespace app\models;
 

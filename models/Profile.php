@@ -118,6 +118,6 @@ class Profile extends \yii\db\ActiveRecord
 
     public function setDefaultImage()
     {
-        $this->avatar = '/uploads/standart.png';
+        $this->avatar = '/gallery/standart.png';
     }
 }

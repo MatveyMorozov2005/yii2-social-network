@@ -34,7 +34,7 @@ class User extends ActiveRecord implements IdentityInterface
 {
     const STATUS_BLOCKED = 0;
     const STATUS_ACTIVE = 1;
-    const STATUS_WAIT = 2;
+
 
     public $role;
 
@@ -124,7 +124,7 @@ class User extends ActiveRecord implements IdentityInterface
         return [
             self::STATUS_BLOCKED => 'blocked',
             self::STATUS_ACTIVE => 'active',
-            self::STATUS_WAIT => 'waiting for confirm',
+
         ];
     }
 
